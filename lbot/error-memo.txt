@@ -1,0 +1,40 @@
+2026-03-12 22:44:13 ERROR    discord.ui.view Ignoring exception in view <MarketCommandView timeout=None children=1> for item <Button style=<ButtonStyle.primary: 1> url=None disabled=False label='広告を作成/更新' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\さくたろう\Desktop\lbot\cogs\market.py", line 422, in create_ad
+    await interaction.response.send_modal(CreateAdModal())
+                                          ^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\modal.py", line 137, in __init__
+    super().__init__(timeout=timeout)
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 186, in __init__
+    self.__weights = _ViewWeights(self._children)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 99, in __init__
+    self.add_item(item)
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 116, in add_item
+    index = self.find_open_space(item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 106, in find_open_space
+    raise ValueError('could not find open space for item')
+ValueError: could not find open space for item
+2026-03-12 22:45:39 ERROR    discord.ui.view Ignoring exception in view <MarketCommandView timeout=None children=1> for item <Button style=<ButtonStyle.primary: 1> url=None disabled=False label='広告を作成/更新' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "C:\Users\さくたろう\Desktop\lbot\cogs\market.py", line 422, in create_ad
+    await interaction.response.send_modal(CreateAdModal())
+                                          ^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\modal.py", line 137, in __init__
+    super().__init__(timeout=timeout)
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 186, in __init__
+    self.__weights = _ViewWeights(self._children)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 99, in __init__
+    self.add_item(item)
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 116, in add_item
+    index = self.find_open_space(item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\さくたろう\Desktop\lbot\venv\Lib\site-packages\discord\ui\view.py", line 106, in find_open_space
+    raise ValueError('could not find open space for item')
+ValueError: could not find open space for item
